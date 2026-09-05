@@ -162,19 +162,44 @@ h4,
 }
 
 .post-content ul {
-  list-style: disc;
+  list-style: none;
+  padding-inline-start: 1.5rem;
+}
+
+.post-content ul > li {
+  position: relative;
+}
+
+/* Draw the bullets ourselves so reset styles and browser themes cannot hide them. */
+.post-content ul > li:not(:has(> input[type="checkbox"]))::before {
+  position: absolute;
+  inset-inline-start: -1.15rem;
+  top: 0;
+  color: var(--secondary);
+  content: "•";
+}
+
+.post-content ul ul > li:not(:has(> input[type="checkbox"]))::before {
+  content: "◦";
 }
 
 .post-content ol {
-  list-style: decimal;
+  padding-inline-start: 1.8rem;
+  list-style: none;
+  counter-reset: post-list-item;
 }
 
-.post-content ul ul {
-  list-style: circle;
+.post-content ol > li {
+  position: relative;
+  counter-increment: post-list-item;
 }
 
-.post-content li::marker {
+.post-content ol > li::before {
+  position: absolute;
+  inset-inline-end: calc(100% + 0.55rem);
   color: var(--secondary);
+  content: counter(post-list-item) ".";
+  font-variant-numeric: tabular-nums;
 }
 
 .post-content ul:has(> li > input[type="checkbox"]) {
