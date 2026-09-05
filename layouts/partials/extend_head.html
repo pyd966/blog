@@ -2,8 +2,11 @@
 <script>
   window.MathJax = {
     tex: {
-      inlineMath: [["\\(", "\\)"]],
-      displayMath: [["\\[", "\\]"], ["$$", "$$"]],
+      // Dollar delimiters are convenient in Markdown. Escaped delimiters
+      // remain available when their backslashes survive Markdown parsing.
+      inlineMath: [["$", "$"], ["\\(", "\\)"]],
+      displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+      processEscapes: true,
       tags: "ams"
     },
     svg: { fontCache: "global" }

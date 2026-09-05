@@ -144,6 +144,42 @@ h4,
 .post-content {
   font-size: 17px;
   line-height: 1.82;
+  color: var(--content);
+}
+
+.post-description,
+.breadcrumbs,
+.breadcrumbs a,
+.post-meta,
+.toc,
+.toc a {
+  color: var(--secondary);
+}
+
+.toc .title,
+.toc a:hover {
+  color: var(--primary);
+}
+
+.post-content ul {
+  list-style: disc;
+}
+
+.post-content ol {
+  list-style: decimal;
+}
+
+.post-content ul ul {
+  list-style: circle;
+}
+
+.post-content li::marker {
+  color: var(--secondary);
+}
+
+.post-content ul:has(> li > input[type="checkbox"]) {
+  list-style: none;
+  padding-inline-start: 0;
 }
 
 .post-content h2,

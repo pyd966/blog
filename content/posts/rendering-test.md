@@ -58,7 +58,9 @@ ShowCodeCopyButtons: true
 
 ## 3. LaTeX 数学公式
 
-行内公式应该和文字自然混排，例如损失函数可以写成 \(L(\theta) = \frac{1}{n}\sum_{i=1}^{n}(f_\theta(x_i)-y_i)^2\)。
+行内公式应该和文字自然混排，例如损失函数可以写成 $L(\theta) = \frac{1}{n}\sum_{i=1}^{n}(f_\theta(x_i)-y_i)^2$。
+
+也支持保留反斜杠的写法：\\(E=mc^2\\)。在 Markdown 中需要写成两个反斜杠，避免被 Markdown 当成转义符。
 
 块级公式应该单独居中显示：
 
@@ -68,9 +70,9 @@ $$
 
 也可以写带编号的公式：
 
-\[
+$$
 \nabla_\theta J(\theta)=\frac{1}{m}\sum_{i=1}^{m}\nabla_\theta\ell\bigl(f_\theta(x_i),y_i\bigr)\tag{1}
-\]
+$$
 
 ## 4. 代码块
 
