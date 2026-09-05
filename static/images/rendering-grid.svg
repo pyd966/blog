@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Rendering test image</title>
+  <desc id="desc">Three calm green and cream panels labelled image, vector, and alt text.</desc>
+  <rect width="1200" height="520" fill="#f4f1ea"/>
+  <rect x="36" y="36" width="1128" height="448" fill="#dce4da" stroke="#55715e" stroke-width="3"/>
+  <path d="M36 370 302 170l190 142 220-190 452 362H36Z" fill="#55715e" opacity=".88"/>
+  <circle cx="954" cy="154" r="92" fill="#d9b76d" opacity=".9"/>
+  <circle cx="876" cy="258" r="66" fill="#233128"/>
+  <rect x="78" y="78" width="194" height="50" fill="#f4f1ea" stroke="#233128" stroke-width="2"/>
+  <text x="102" y="112" fill="#233128" font-family="Georgia, serif" font-size="28">Image / 01</text>
+  <text x="78" y="447" fill="#f4f1ea" font-family="Segoe UI, sans-serif" font-size="22" letter-spacing="2">LOCAL SVG · ALT TEXT · RESPONSIVE</text>
+</svg>

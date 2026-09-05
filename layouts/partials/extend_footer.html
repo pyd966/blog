@@ -1,0 +1,7 @@
+{{- if .Params.math -}}
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if (window.MathJax?.typesetPromise) window.MathJax.typesetPromise();
+  });
+</script>
+{{- end -}}
