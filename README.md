@@ -30,4 +30,16 @@
 
 ## 部署
 
-建议把本目录作为单独 GitHub 仓库，例如 `yourname-blog`，然后在 GitHub Pages 中选择 GitHub Actions。Hugo 的构建产物不需要提交到仓库，推送文章后由 Actions 自动构建和发布。
+建议把本目录作为单独 GitHub 仓库，例如 `yourname-blog`。仓库已经包含 `.github/workflows/pages.yml`：它会安装 Hugo Extended、构建站点并发布 `public/`，因此 Hugo 的构建产物不需要提交到仓库。
+
+推送到 `main` 后，在仓库的 **Settings → Pages** 中将 **Source** 设置为 **GitHub Actions**。之后每次推送文章或配置变更，Actions 都会自动重新部署。
+
+上线前请将 `hugo.toml` 中的 `baseURL`、站点标题、作者、社交链接和 Homepage 地址替换为真实值。如果绑定自定义域名，再在 GitHub Pages 设置中配置域名并同步 DNS。
+
+## GitHub Actions 文件
+
+```text
+.github/workflows/pages.yml
+```
+
+该工作流使用 Hugo Extended `0.164.0`，与本地预览使用的版本保持一致。
