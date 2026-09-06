@@ -39,8 +39,8 @@ hasCJKLanguage = true
     text = 'Your Name'
 
   [params.homeInfoParams]
-    Title = 'Notes'
-    Content = 'Course notes, research notes, and things I build.'
+    Title = 'Notes from the work.'
+    Content = 'A separate notebook for research notes, course ideas, and small things I learn while building.'
 
   [params.fuseOpts]
     isCaseSensitive = false
