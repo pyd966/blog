@@ -23,9 +23,9 @@
 ## 需要替换的占位内容
 
 - `Your Name`
-- `yourname.github.io`
+- `pyd966.github.io`
 - `you@example.com`
-- `https://blog.example.com/`
+- `https://pyd966.github.io/blog/`
 - `content/posts/first-note.md`
 
 ## 部署
@@ -34,7 +34,7 @@
 
 推送到 `main` 后，在仓库的 **Settings → Pages** 中将 **Source** 设置为 **GitHub Actions**。之后每次推送文章或配置变更，Actions 都会自动重新部署。
 
-上线前请将 `hugo.toml` 中的 `baseURL`、站点标题、作者、社交链接和 Homepage 地址替换为真实值。如果绑定自定义域名，再在 GitHub Pages 设置中配置域名并同步 DNS。
+上线前请将 `hugo.toml` 中的站点标题、作者和邮箱替换为真实值。当前博客地址为 `https://pyd966.github.io/blog/`，主页地址为 `https://pyd966.github.io/`。
 
 ## GitHub Actions 文件
 

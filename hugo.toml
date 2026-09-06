@@ -1,4 +1,4 @@
-baseURL = 'https://blog.example.com/'
+baseURL = 'https://pyd966.github.io/blog/'
 locale = 'zh-cn'
 defaultContentLanguage = 'zh'
 title = 'Your Name · Notes'
@@ -54,7 +54,7 @@ hasCJKLanguage = true
 
   [[params.socialIcons]]
     name = 'github'
-    url = 'https://github.com/yourname'
+    url = 'https://github.com/pyd966'
 
   [[params.socialIcons]]
     name = 'email'
@@ -88,5 +88,5 @@ hasCJKLanguage = true
   [[menu.main]]
     identifier = 'homepage'
     name = 'Homepage ↗'
-    url = 'https://yourname.github.io/'
+    url = 'https://pyd966.github.io/'
     weight = 50
