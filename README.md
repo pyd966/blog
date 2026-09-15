@@ -24,7 +24,7 @@
 
 - `Your Name`
 - `pyd966.github.io`
-- `you@example.com`
+- `pyd966@gmail.com`
 - `https://pyd966.github.io/blog/`
 - `content/posts/first-note.md`
 
